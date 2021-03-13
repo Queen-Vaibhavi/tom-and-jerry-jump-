@@ -48,5 +48,4 @@ function keyPressed(){
         tom.addAnimation("tomRunning",tomimg);
         tom.changeAnimation("tomRunning");
     }
-  
 }
