@@ -5,13 +5,13 @@ var bg,bgImage;
 function preload() {
 
     //load the images here
-    tomImage.loadImage("cat1.png");
-    tomimg.loadAnimation("cat2.png","cat3.png");
+    tomImage = loadImage("cat1.png");
+    tomimg = loadAnimation("cat2.png","cat3.png");
 
-    jerryImage.loadImage("mouse1.png");
-    jerryimg.loadAnimation("mouse2.png","mouse3.png");
+    jerryImage = loadImage("mouse1.png");
+    jerryimg = loadAnimation("mouse2.png","mouse3.png");
     
-    bgImage.loadImage("garden.png");
+    bgImage = loadImage("garden.png");
 }
 
 function setup(){
