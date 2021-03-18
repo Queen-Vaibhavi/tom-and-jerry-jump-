@@ -4,6 +4,7 @@ var tomimg,jerryimg;
 var bg,bgImage;
 function preload() {
 
+    
     //load the images here
     tomImage = loadImage("cat1.png");
     tomimg = loadAnimation("cat2.png","cat3.png");
@@ -21,13 +22,13 @@ function setup(){
     var bg = createSprite(1000,1000,1800,800);
     bg.addImage(bgImage);
     bg.scale = 5;
-
+    
     var tom = createSprite(500,800,20,20);
-    tom.addImage(tomImage);
+    tom.addAnimation(tomImage);
     tom.scale= 0.7;
     
     var jerry = createSprite(800,500,20,20);
-    jerry.addImage(jerryImage);
+    jerry.addAnimation(jerryImage);
     jerry.scale= 0.7;
     
 }
