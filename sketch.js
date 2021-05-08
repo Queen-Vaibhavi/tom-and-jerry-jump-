@@ -1,16 +1,17 @@
+
 var tom,jerry;
 var tomImage,jerryImage;
-var tomimg,jerryimg;
+var tomImg,jerryImg;
 var bg,bgImage;
 function preload() {
 
     
     //load the images here
     tomImage = loadImage("images/cat1.png");
-    tomimg = loadAnimation("images/cat2.png","images/cat3.png");
+    tomImg = loadAnimation("images/cat2.png","images/cat3.png");
 
     jerryImage = loadImage("images/mouse1.png");
-    jerryimg = loadAnimation("images/mouse2.png","images/mouse3.png");
+    jerryImg = loadAnimation("images/mouse2.png","images/mouse3.png");
     
     bgImage = loadImage("images/garden.png");
 }
@@ -19,17 +20,19 @@ function setup(){
     createCanvas(1000,800);
     //create tom and jerry sprites here
      
-    var bg = createSprite(1000,1000,1800,800);
+    var bg = createSprite(500,300,1800,800);
     bg.addImage(bgImage);
-    bg.scale = 5;
+    bg.scale = 1.5;
     
-    var tom = createSprite(500,800,20,20);
-    tom.addAnimation(tomImage);
-    tom.scale= 0.7;
+    var tom = createSprite(800,610,40,40);
+    tom.addImage(tomImage);
+    //tom.addAnimation(tomImg);
+    tom.scale= 0.2;
     
-    var jerry = createSprite(800,500,20,20);
-    jerry.addAnimation(jerryImage);
-    jerry.scale= 0.7;
+    var jerry = createSprite(120,610,20,20);
+    jerry.addImage(jerryImage);
+    //jerry.addAnimation(jerryImg);
+    jerry.scale= 0.2;
     
 }
 
